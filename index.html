@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Encriptador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="alura logo" href="./images/alura-logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/alura-logo.svg" alt="alura logo">
+      </div>
+      <nav class="pages-nav">
+        <div class="pages-nav__item">
+          <a class="link link--page" href="https://www.linkedin.com/in/gcasascordero" target="_blank">Linkedin</a>
+        </div>
+    </header>
+    <section class="full">
+     <div class="caja-1">
+       <form class="textArea">
+         <textarea class="textInput" id="textInput" autofocus placeholder="Ingrese el texto aqui"></textarea>
+       </form>
+       <div class="info">
+        <img src="images/i.svg" alt="Info image">
+        <p>Solo letras minúsculas y sin acentos</p>
+       </div>
+       <div id="err"></div>
+       <div class="buttons">
+         <button class="boton" onclick="encriptar()">Encriptar</button>
+         <button class="boton-2" onclick="desencriptar()">Desencriptar</button>
+       </div>
+     </div>
+    <div class="caja-2">
+     <p id="textDesencripted">Ningun mensaje encontrado! <br> <br> <br><br> <br><br><br><br> Ingrese el texto que desea encriptar o desencriptar</p>
+     <div id="popCopy"></div>
+     <br><br>
+     <button class="boton-2" id="copy" onclick="copy()">Copiar
+        <img src="images/clipboard.svg" alt="clipboard icon">
+     </button>
+   </div>
+   </section> 
+  </body>
+  <script src="./encriptador.js"></script>
+
+  <footer>
+    <p class="copyright">© Creado por <a href="https://github.com/gcasascordero" target="_blank" rel="noopener noreferrer">Guillermo Casas-Cordero</a></p>
+</footer>
+</html>

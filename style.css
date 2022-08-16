@@ -1,0 +1,244 @@
+* {
+  font-family: 'Fira code', sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #fe9501;
+}
+
+header {
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+  background-color: #fe9501;
+}
+
+.logo {
+	margin: 10px;
+}
+
+.logo img {
+	width: 25px;
+}
+
+.pages-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.pages-nav__item {
+	float: left;
+	padding: 10px;
+}
+
+.link {
+	font-size: 1.0em;
+	text-decoration: none;
+	position: relative;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.link:hover,
+.link:focus {
+	color: #efb300;
+}
+
+.link--page {
+	display: block;
+	float: center;
+	color: #06055d;
+}
+
+.link--page:not(.link--faded)::before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 30px;
+	height: 2px;
+	margin: 5px 0 0 -15px;
+	background: #fe9501;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+    font-style: none;
+}
+
+.link--page:hover:before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+@media (max-width:700px) {
+	header {
+		flex-direction: column;
+	}
+	
+	.link {
+		font-size: 1rem;
+	}
+
+}
+.full {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.textArea {
+  margin: 20px;
+}
+
+.caja-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #101826;
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 600px;
+}
+
+.caja-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080F1A;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  color: #ffffff;
+  max-width: 300px;
+  margin: 30px;
+}
+
+.caja-2 p{
+  font-size: 1rem;
+  padding: 20px;
+  word-break: break-all;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textInput{
+    color: #ffff;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 4vmin;
+    background-color: #101826;
+    background: transparent;
+    appearance: none;
+    outline: none;
+    padding: 0px;
+    resize: none;
+    overflow: hidden;
+    border: none;
+    resize: none;
+    height: 250px;
+}
+
+.boton {
+  background-color: #fe9501;
+  font-size: 1.3rem;
+  width: 200px;
+  height: 60px;
+  cursor:pointer;
+  border: none;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.boton-2 {
+  background-color: rgba(0%, 0%, 0%, 0%);
+  color: #ffffff;
+  border-color: #fe9501;
+  font-size: 1.3rem;
+  width: 200px;
+  height: 60px;
+  cursor:pointer;
+  border-radius: 30px;
+  margin: 30px;
+  font-weight:lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-2 img {
+  height: 25px;
+  margin: 10px;
+}
+
+#err {
+  display: none;
+  background: #f54242;
+  border: 1px solid #bd1717;
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+#popCopy {
+  display: none;
+  background: #0c8ce9;
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.info p{
+  margin-left: 10px;
+}
+
+.info img {
+  height: 16px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright {
+  color: #052751;
+  font-size: 15px;
+  margin: 80px;
+  font-weight: 600;
+}
+
+.copyright a {
+  text-decoration: none;
+  font-style: normal;
+  color: #052751;
+}
+
+.copyright a:hover {
+  color: #0c4c9a;
+}
